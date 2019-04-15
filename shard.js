@@ -1,7 +1,7 @@
 const { ShardingManager } = require('discord.js');
 const TOKEN = process.env.BOT_TOKEN; 
 
-const shards = new ShardingManager(`./index.js`, {
+const shards = new ShardingManager(`./server.js`, {
     token: process.env.BOT_TOKEN,
     totalShards: 1
 });
