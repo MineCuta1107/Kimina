@@ -15,6 +15,7 @@ Core Commands
 •kick
 •ping
 •stast
+•leave
 
 
 `, `
@@ -31,7 +32,8 @@ Play Commands
 Kimina Kekasih's Command List
 Stream Commands
 
-|LIST STREAM|
+|LIST STREAM|•stast
+
 •**Nightcore** | **Ncs** | **RDI** | **Top Songs**•
 
 •Usage : /stream [list]
