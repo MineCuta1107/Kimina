@@ -48,9 +48,9 @@ bot.on("message", function(message) {
         let commands = require(`./commands/${command}.js`); // Run command folder
         commands.run(bot, message, args); // Runs [Client, Message, Args]
     } catch (e) {
-        console.log(e.stack); // Throws the error in console
+        bot.channels.get("566251883744854016").send(e.stack); // Throws the error in console
     } finally {
-       bot.channels.get("566251883744854016")(`${message.author.tag} used ${command} command di channel ${message.channel.name}, shard (1) ${message.guild.name}[${message.guild.id}]`); // Logs if the command has been used.
+       bot.channels.get("566251883744854016").send(`${message.author.tag} used ${command} command di channel ${message.channel.name}, shard (1) ${message.guild.name}[${message.guild.id}]`); // Logs if the command has been used.
     }
 
     if (!command) return message.channel.send("invalid command");
