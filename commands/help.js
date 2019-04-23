@@ -15,7 +15,6 @@ Core Commands
 •kick
 •ping
 •stast
-•leave
 
 
 `, `
@@ -23,21 +22,10 @@ Core Commands
 Play Commands
 
 |LIST RADIO |
-•**Kpop** | **Jpop** | **rfm** | **fun** | **virgin**•
+•**Kpop** | **Jpop** | **Nightcore** | **Ncs** | **RDI** | **Top Songs**•
 
 •Usage : /play [list]
 •Example : /play Kpop
-
-`, `
-Kimina Kekasih's Command List
-Stream Commands
-
-|LIST STREAM|•stast
-
-•**Nightcore** | **Ncs** | **RDI** | **Top Songs**•
-
-•Usage : /stream [list]
-•Example : /stream Nightcore
 
 `, `
 Kimina Kekasih's Support
@@ -49,7 +37,8 @@ Kimina Kekasih's Support
 **[Vote Kimina Kekasih on DBL](https://discordbots.org/bot/543013335210393600/vote)**
 **[Invite Mine Cuta Support](https://bit.ly/2OqNto6)**
 
-**©NewStars Trix Development**
+**:diamond_shape_with_a_dot_inside:Team:diamond_shape_with_a_dot_inside:**
+**NewStars Trix Development**
 `]
 let page = 1;
   
