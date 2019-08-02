@@ -29,8 +29,8 @@ var bot = new Discord.Client()
 bot.on("ready", function() {
   function randStatus() {
   let status = [
-   `/help || bit.ly/minekimina`,
-  `Music`]; //SETTING STATUS BOT
+   `>help || Music 24/7`,
+  `Streaming 24/7`]; //SETTING STATUS BOT
     let rstatus = Math.floor(Math.random() * status.length);
     bot.user.setActivity(status[rstatus], {
           type: "Listening",
@@ -50,7 +50,7 @@ bot.on("message", function(message) {
     } catch (e) {
         bot.channels.get("566251883744854016").send(e.stack); // Throws the error in console
     } finally {
-       bot.channels.get("566251883744854016").send(`${message.author.tag} used ${command} command di channel ${message.channel.name}, shard (1) ${message.guild.name}[${message.guild.id}]`); // Logs if the command has been used.
+    //   bot.channels.get("566251883744854016").send(`${message.author.tag} used ${command} command di channel ${message.channel.name}, shard (1) ${message.guild.name}[${message.guild.id}]`); // Logs if the command has been used.
     }
 
     if (!command) return message.channel.send("invalid command");
