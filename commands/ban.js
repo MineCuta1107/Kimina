@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
       .setDescription ("Sorry, You Don't Have Permissions For Members Tires");
 return message.channel.send (embed);
   }
-  if (! message.guild.member (client.user) .hasPermission ("BAN_MEMBERS")) return message.channel.send (`** ${message.author.tag} ** Sorry, Mine Cuta Support Doesn t Have Permissions \ BAN_MEMBERS Please give Mine Cuta Support Permissions to Member Tires:) `) .then (msg => msg.delete (5000))
+  if (! message.guild.member (client.user) .hasPermission ("BAN_MEMBERS")) return message.channel.send (`** ${message.author.tag} ** Sorry, Im Doesn t Have Permissions \ BAN_MEMBERS Please give Mine Cuta Support Permissions to Member Tires:) `) .then (msg => msg.delete (5000))
   
   let toBan = message.guild.member (message.mentions.users.first ()) || message.guild.members.get (args [0]);
   if (! toBan) return message.channel.sendMessage ("Cannot Find User! First User Mention!");
