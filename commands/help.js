@@ -113,7 +113,7 @@ module.exports.run = async (bot, message, args) => {
   .setFooter("Hinata Hyuga Commands List")
   
   .setTimestamp()
-  .addField("-General", '`help` | `ping` | `invite`')
+  .addField("-General", '`help` | `ping` | `invite` | `stats`')
   .addField("-Moderator", '`kick` | `ban` ')
   .addField("-Music", 'Streaming List : \n`•Nightcore`\n`•Top Songs`\n`•noisefm`\n`•RDI`\n`•jpop`\n`•ncs`\n`•kpop`\n\nHow to use music commands?\n•Example :/play RDI')
   message.channel.send(embed)
