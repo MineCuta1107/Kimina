@@ -1,4 +1,4 @@
-const Discord = require("discord.js") 
+/*const Discord = require("discord.js") 
 
 module.exports.run = async (bot, message, args) => {
   let pages = [`
@@ -101,3 +101,30 @@ exports.help = {
  name: "help",
   aliases: "h"
 }
+*/
+const Discord = require('discord.js');
+
+module.exports.run = async (bot, message, args) => {
+  const embed = new Discord.RichEmbed()
+  .setTitle("==========>**Commands List**<==========")
+  
+  .setColor("RANDOM")
+  .setDescription("© Hinata Hyuga 2019")
+  .setFooter("Hinata Hyuga Commands List")
+  
+  .setTimestamp()
+  .addField("-General", '`help` | `ping` | `invite`')
+  .addField("-Moderator", '`kick` | `ban` ')
+  .addField("-Music", 'Streaming List : \n`•Nightcore`\n`•Top Songs`\n`•noisefm`\n`•RDI`\n`•jpop`\n`•ncs`\n`•kpop`\n\nHow to use music commands?\n•Example :/play RDI')
+  message.channel.send(embed)
+}
+
+exports.conf = {
+    aliases: ['h'],
+    cooldown: "2"
+}
+  module.exports.help = {
+    name: "help",
+    description: 'List Help',
+  usage: 'help'
+  }
